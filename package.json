@@ -1,0 +1,23 @@
+{
+  "name": "ai-appointment-booking-saas",
+  "version": "1.0.0",
+  "description": "AI-Assisted Appointment Booking SaaS with Multi-Tenancy and Conflict Prevention",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "seed:backend": "node -r dotenv/config backend/src/db/seedBusinesses.js",
+    "migrate:logs": "node -r dotenv/config backend/src/db/migrateAiLogs.js"
+  },
+  "keywords": [
+    "saas",
+    "appointment-booking",
+    "ai",
+    "react",
+    "nodejs",
+    "postgresql",
+    "groq",
+    "websockets"
+  ],
+  "license": "ISC"
+}
